@@ -1,0 +1,28 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Actions taken before building"
+  lane :build_app do
+      download_dsyms
+      upload_symbols_to_sentry(
+        auth_token: '...',
+        org_slug: '...',
+        project_slug: '...',
+      )
+  end
+end

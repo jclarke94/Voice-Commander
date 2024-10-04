@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_BASE</key>
+	<string>$(API_BASE)</string>
+	<key>API_CLIENT_ID</key>
+	<string>$(API_CLIENT_ID)</string>
+	<key>API_CLIENT_SECRET</key>
+	<string>$(API_CLIENT_SECRET)</string>
+	<key>ENCRYPT_CORE_DATA</key>
+	<string>$(ENCRYPT_CORE_DATA)</string>
+	<key>ENVIRONMENT</key>
+	<string>$(ENVIRONMENT)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>SENTRY_DSN</key>
+	<string>$(SENTRY_DSN)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Inter-Black.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-ExtraBold.ttf</string>
+		<string>Inter-ExtraLight.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>Inter-Thin.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+</dict>
+</plist>

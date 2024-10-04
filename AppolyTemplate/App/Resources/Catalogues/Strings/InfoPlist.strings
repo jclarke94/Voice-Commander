@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  AppolyTemplate
+
+  Created by James Wolfe on 06/03/2021.
+  Copyright © 2021 Appoly. All rights reserved.
+*/
+
+
+
+"NSFaceIDUsageDescription" = "Authentication is needed to access your account";

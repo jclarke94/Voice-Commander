@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  AppolyTemplate
+
+  Created by James Wolfe on 06/03/2021.
+  Copyright © 2021 Appoly. All rights reserved.
+*/
+
+// MARK: - Network Errors
+"NetworkError.NetworkUnavailable.Text" = "Please check your network connection.";
+"NetworkError.InvalidResponse.text" = "Response was invalid, please try again.";
+"NetworkError.Unknown.Text" = "There has been a problem, please try again.";
+"NetworkError.Unauthenticated.Text" = "Unauthenticated";
+
+
+
+// MARK: - Core Data Errors
+"CoreDataError.MustBeMainThread" = "Must be called from main thread";
+"CoreDataError.InvalidType" = "Attempt to fetch non-managed object class";
