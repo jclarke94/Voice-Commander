@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/joel/Documents/Appoly/ios_projects/Voice-Commander/VoiceCommander.xcodeproj">
    </FileRef>
 </Workspace>

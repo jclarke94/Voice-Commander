@@ -11,7 +11,7 @@ import PassportKit
 import SwiftUI
 
 @main
-struct AppolyTemplateApp: App {
+struct VoiceCommanderApp: App {
 
     // MARK: - Variables
     @StateObject private var passportKit = PassportKit.shared
@@ -33,13 +33,13 @@ struct AppolyTemplateApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-                if passportKit.isAuthenticated {
+//                if passportKit.isAuthenticated {
                     MainView()
                         .transition(.move(edge: .bottom))
-                } else {
-                    LoginView()
-                        .transition(.move(edge: .bottom))
-                }
+//                } else {
+//                    LoginView()
+//                        .transition(.move(edge: .bottom))
+//                }
             }
             .animation(.default)
         }

@@ -13,18 +13,14 @@ struct MainView: View {
 
     // MARK: - View
     var body: some View {
-        switch viewModel.state {
-        case .loaded:
-            MainLoadedView(viewModel: viewModel)
-            .transition(.opacity)
-        case .loading:
-            MainLoadingView()
-            .transition(.opacity)
-        case .error:
-            MainErrorView(viewModel: viewModel)
-            .transition(.opacity)
-            }
+        VStack {
+            Text("Voice Commander")
+                .font(.title)
+                .bold()
+            
+            Spacer()
         }
+    }
 }
 
 struct MainView_Previews: PreviewProvider {
