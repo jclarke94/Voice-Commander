@@ -10,12 +10,16 @@ import Valet
 import PassportKit
 import SwiftUI
 
+
+
 @main
 struct VoiceCommanderApp: App {
 
     // MARK: - Variables
     @StateObject private var passportKit = PassportKit.shared
     @UIApplicationDelegateAdaptor private var apnsManager: APNSManager
+    
+    
 
     // MARK: - Initializers
     init() {
@@ -33,13 +37,10 @@ struct VoiceCommanderApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-//                if passportKit.isAuthenticated {
-                    MainView()
-                        .transition(.move(edge: .bottom))
-//                } else {
-//                    LoginView()
-//                        .transition(.move(edge: .bottom))
-//                }
+                
+                ContainerView()
+                    .transition(.move(edge: .bottom))
+                
             }
             .animation(.default)
         }

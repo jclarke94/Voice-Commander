@@ -1,16 +1,14 @@
 //
-//  MainViewModel.swift
-//  AppolyTemplate
+//  VoiceViewModel.swift
+//  VoiceCommander
 //
-//  Created by James Wolfe on 18/02/2022.
+//  Created by Joel Clarke on 04/10/2024.
 //
 
 import Foundation
-import PassportKit
 import SwiftUI
 
-class MainViewModel: VoiceCommanderVM {
-
+class VoiceViewModel: VoiceCommanderVM {
     // MARK: - Variables
     @ObservedObject var cvm : ContainerViewModel
 
@@ -18,9 +16,4 @@ class MainViewModel: VoiceCommanderVM {
     init(_ cvm : ContainerViewModel) {
         self.cvm = cvm
     }
-
-    // MARK: - Functionality
-    
-    
-
 }

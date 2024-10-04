@@ -10,4 +10,7 @@ import SwiftUI
 
 extension Image {
 
+    static let back = Image("ic_back")
+    static let home = Image("ic_home")
+    static let close = Image("ic_close")
 }
