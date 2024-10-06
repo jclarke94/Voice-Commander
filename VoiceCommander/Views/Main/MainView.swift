@@ -19,13 +19,13 @@ struct MainView: View {
 
     // MARK: - View
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             
-            
+            Spacing(80)
                 
             Image.home
             .resizable()
-            .frame(width: 32, height: 32)
+            .frame(width: 50, height: 50)
                 .foregroundColor(.black)
             
             Text("Voice Commander")
@@ -37,10 +37,8 @@ struct MainView: View {
                 //TODO: navigation
                 viewModel.cvm.setViewState(viewState: .info)
             } label: {
-                Text("What is this app?")
-                    .foregroundColor(.blue)
-                    .font(.subheadline)
-            }
+                PrimaryButton(text: "What is this app?")
+            }.padding()
             
             Spacing(50)
             
@@ -48,10 +46,8 @@ struct MainView: View {
                 //TODO: navigation
                 viewModel.cvm.setViewState(viewState: .voice)
             } label: {
-                Text("Go to voice command!")
-                    .foregroundColor(.blue)
-                    .font(.subheadline)
-            }
+                PrimaryButton(text: "Go to voice command!")
+            }.padding()
             
             
             Spacer()
